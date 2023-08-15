@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>login-authentication</title>
+  <link rel="stylesheet"  href="signup.css">
+  <script src="script.js"></script> 
+</head>
+<body>
+  
+  <nav class="navbar">
+        
+    <ul class="nav-links">
+
+      <input style="display: none;" class="navcheck"  type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="#">About</a></li>
+      </div>
+    </ul>
+  </nav>
+      <div class="container">
+      <div class="login-box">
+          <h1>Create an account</h1>
+               
+          <form name="inform" method="post" onsubmit="return inputform()">
+              <span class="icon"><i class='bx bxs-user-circle'></i></span>
+              <input  class="detail" type="name" id="name" name="name" placeholder="Name">
+
+              <span class="icon"><i class='bx bxs-envelope' ></i></i></span>
+              <input  class="detail" type="email" id="email" name="email" placeholder="E-mail">
+
+              <span class="icon"><i class='bx bxs-user-detail'></i></span>
+              <input  class="detail" type="username" id="username" name="username" placeholder="Username">
+
+              <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+              <input class="detail" type="password" id="password" name="password" placeholder="password">
+
+
+              <span class="icon"><i class='bx bxs-lock'></i></span>
+              <input class="detail" type="password" id="password" name="cpassword" placeholder="confirm password">
+
+
+              
+
+              <div class="social-icon">
+                <span class="insta"><i class='bx bxl-instagram-alt' ></i></span>
+                <span class="facebook"><i class='bx bxl-facebook-circle' ></i></span>
+                <span class="linkedin"><i class='bx bxl-linkedin-square' ></i></span>
+              </div>
+              <input class="signup" type="submit" onclick="validateform()" value="Sign Up">
+          </form>
+
+      </div>
+  </div>
+  <div style=" text-align: center;">
+      <footer style="width: 89%; border-radius: 10px; position: relative; left: 5%; color: white; padding: 1%;">
+          <p>&#169 login-authentication@gmail.com</p>
+      </footer>
+  </div>
+</body>
+</html>
